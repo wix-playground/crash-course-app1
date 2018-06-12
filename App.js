@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navigation } from 'react-native-navigation';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet } from 'react-native';
+import { Text, View, TouchableOpacity } from 'react-native-ui-lib';
 
 export default class App extends React.Component {
   onPushScreen = async () => {
@@ -16,9 +17,9 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <Text>Open up App.js to start working on your app!</Text>
         <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <Text red30>Shake your phone to open the developer menu.</Text>
         <TouchableOpacity onPress={this.onPushScreen}>
-          <Text>RNNv2</Text>
+          <Text blue30>RNNv2</Text>
         </TouchableOpacity>
       </View>
     );
